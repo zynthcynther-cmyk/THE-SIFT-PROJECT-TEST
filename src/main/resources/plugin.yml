@@ -1,0 +1,23 @@
+name: TheSift
+version: '${project.version}'
+main: dev.sift.plugin.SiftPlugin
+api-version: '26.3'
+description: The Sift dimension, temporary rifts, Ichor hazards and Siftite gear (server-side only).
+authors: [TheSift]
+
+commands:
+  sift:
+    description: Manage The Sift
+    usage: /sift <rift|tp|give|soul|buildframe|reload>
+    permission: sift.use
+
+permissions:
+  sift.use:
+    description: Basic access to /sift
+    default: true
+  sift.admin:
+    description: Admin subcommands (give, soul, buildframe, reload, tp, rift)
+    default: op
+  sift.portal.use:
+    description: Allows using Sift portals and rifts
+    default: true
